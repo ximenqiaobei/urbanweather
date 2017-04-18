@@ -1,4 +1,6 @@
-### 框架 jquery UI + bootstrap 
+
+### 使用的框架 jquery jqueryUI + bootstrap 
+### 使用 ajax 动态获取数据并渲染成页面
 
 ### 效果图
 
