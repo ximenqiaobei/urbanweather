@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <title>国内天气查询</title>
+        <link rel="stylesheet" href="tq.css">
+        <!-- <script src='http://cdn.bootcss.com/jquery/3.1.1/jquery.js'></script> -->
+        <!-- jqueryUI -->
+        <link rel="stylesheet" href="http://apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+        <script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
+        <!-- BootStrap -->
+        <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+        <!-- <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"> -->
+        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+        <!-- 查询栏 -->
+        <!-- <div class="query">
+            <label>
+                城市：
+                <input class='input_city_name tags' type="text" placeholder="请输入城市名称" value="">
+            </label>
+            <button class='button_query' type="button">查询</button>
+        </div> -->
+
+
+        <!-- 测试bootstrap -->
+        <div class="row">
+            <div class="col-lg-4 col-sm-9 col-xs-12 col-md-6">
+                <div class="input-group" style="display=inline-block">
+                    <!-- 增加填写错误弹出提示 -->
+                    <input id='temp' type="text" class="form-control tags input_city_name"
+                        placeholder="请输入城市名称"
+                        data-placement="bottom"
+                        data-content="请输入正确的城市名称"
+                    >
+                    <span class="input-group-btn">
+                        <button class="btn button_query btn-success" type="button">查询</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 热门城市下拉框选项 -->
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            热门城市
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu rmList" aria-labelledby="dropdownMenu1">
+            <li><a class='rm'>北京</a></li>
+            <li><a class='rm'>上海</a></li>
+            <li><a class='rm'>广州</a></li>
+            <li><a class='rm'>深圳</a></li>
+          </ul>
+        </div>
+
+        <!-- 展示栏 -->
+        <div class="col-lg-4 col-sm-9 col-xs-12 col-md-6">
+            <div class="result"></div>
+        </div>
+        <!-- js -->
+        <script src='cityID.js'></script>
+        <script src='tq.js'></script>
+    </body>
+</html>
